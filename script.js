@@ -13,7 +13,8 @@ const BUSINESS = {
   reviewUrl: "", // Add the direct Google review URL here when available.
   websiteUrl: "https://www.instagram.com/jt_telecom2020?exln=cW9neGl4anJ2dGFx",
   phone: "9916494131",
-  logoUrl: "assets/jt-telecom-logo.svg", // Replace with a different logo URL if required.
+  whatsappUrl: "https://wa.me/919916494131",
+  logoUrl: "jt-telecom-logo.svg", // Replace with a different logo URL if required.
   colors: {
     brand: "#A77B22",
     brandDeep: "#17130D",
@@ -55,6 +56,7 @@ function applyBusinessDetails() {
   }
   $("directions-link").href = BUSINESS.directionsUrl;
   $("website-link").href = BUSINESS.websiteUrl;
+  $("whatsapp-link").href = BUSINESS.whatsappUrl;
   $("phone-link").href = `tel:${BUSINESS.phone.replace(/[^+\d]/g, "")}`;
   $("brand-initials").textContent = initials(BUSINESS.name);
 
