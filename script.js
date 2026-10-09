@@ -14,7 +14,7 @@ const BUSINESS = {
   websiteUrl: "https://www.instagram.com/jt_telecom2020?exln=cW9neGl4anJ2dGFx",
   phone: "9916494131",
   whatsappUrl: "https://wa.me/919916494131",
-  logoUrl: "jt-telecom-logo.svg", // Replace with a different logo URL if required.
+  logoUrl: "jt-telecom-logo.svg?v=2", // Replace with a different logo URL if required.
   colors: {
     brand: "#A77B22",
     brandDeep: "#17130D",
