@@ -14,7 +14,6 @@ const BUSINESS = {
   websiteUrl: "https://www.instagram.com/jt_telecom2020?exln=cW9neGl4anJ2dGFx",
   phone: "9916494131",
   whatsappUrl: "https://wa.me/919916494131",
-  logoUrl: "jt-telecom-logo.svg?v=2", // Replace with a different logo URL if required.
   colors: {
     brand: "#A77B22",
     brandDeep: "#17130D",
@@ -58,18 +57,6 @@ function applyBusinessDetails() {
   $("website-link").href = BUSINESS.websiteUrl;
   $("whatsapp-link").href = BUSINESS.whatsappUrl;
   $("phone-link").href = `tel:${BUSINESS.phone.replace(/[^+\d]/g, "")}`;
-  $("brand-initials").textContent = initials(BUSINESS.name);
-
-  if (BUSINESS.logoUrl) {
-    const mark = $("brand-mark");
-    const image = new Image();
-    image.src = BUSINESS.logoUrl;
-    image.alt = "";
-    image.addEventListener("error", () => {
-      mark.innerHTML = `<span>${initials(BUSINESS.name)}</span>`;
-    });
-    mark.replaceChildren(image);
-  }
 }
 
 applyBusinessDetails();
